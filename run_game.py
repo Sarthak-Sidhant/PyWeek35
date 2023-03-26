@@ -1,5 +1,6 @@
 import pygame
 import random
+import time
 
 # initialize pygame
 pygame.init()
@@ -93,4 +94,5 @@ game_over_message = font.render("Game Over", True, WHITE)
 game_window.blit(game_over_message, (WINDOW_WIDTH//2 - game_over_message.get_width()//2,
                                         WINDOW_HEIGHT//2 - game_over_message.get_height()//2))
 pygame.display.update()
-
+time.sleep(60)
+pygame.quit()
