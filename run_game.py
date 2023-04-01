@@ -43,6 +43,7 @@ player_speed = 5
 # define font
 font = pygame.font.Font(None, 36)
 
+
 def main_loop():
     # game loop
     while not game_over:
@@ -88,8 +89,7 @@ def main_loop():
 
         # tick the clock
         clock.tick(60)
-        
-main_loop()
+
 # draw "game over" message and restart option
 restart_screen = pygame.Surface((WINDOW_WIDTH, WINDOW_HEIGHT))
 restart_screen.fill((0, 0, 255))  # fill with blue color
@@ -116,3 +116,6 @@ while True:
             main_loop()
     pygame.display.update()
     pygame.time.delay(1000)
+
+main_loop()
+
