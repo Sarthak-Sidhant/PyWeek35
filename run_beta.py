@@ -34,6 +34,8 @@ guard_x = random.randint(0, WINDOW_WIDTH - guard_size)
 guard_y = random.randint(0, WINDOW_HEIGHT - guard_size)
 guard_speed = 3
 
+
+
 # set up the game loop
 game_over = False
 
@@ -99,13 +101,6 @@ while not restart:
         if event.type == pygame.KEYDOWN:
             if event.key == pygame.K_SPACE:
                 restart = True
-
-# reset player and guard positions
-player = Player(WINDOW_WIDTH // 2, WINDOW_HEIGHT // 2)
-player.x = WINDOW_WIDTH // 2
-player.y = WINDOW_HEIGHT // 2
-guard.x = random.randint(0, WINDOW_WIDTH - guard_size)
-guard.y = random.randint(0, WINDOW_HEIGHT - guard_size)
 
 # reset game variables
 game_over = False
